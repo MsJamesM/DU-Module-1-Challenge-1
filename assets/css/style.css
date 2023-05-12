@@ -1,12 +1,18 @@
+/* The universal selector affects all elements in the page */
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* The <body> tag contains most elements (i.e. images, headings, etc.) in the page  */
+
 body {
     background-color: #d9dcd6;
 }
+
+/* The <header> tag affects elements at the top of the page and often contains the page's title and navigation links */
 
 header {
     display: flex;
@@ -19,12 +25,21 @@ header {
     color: #ffffff;
 }
 
-.seo {
+header .seo {
     color: #d9dcd6;
 }
 
+#hero {
+    height: 1000px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* The <nav> tag affects navigation links on the page */
+
 nav {
-    list-style-type: none;
     padding-top: 15px;
     margin-right: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -36,17 +51,11 @@ nav ul li {
     margin-left: 25px;
 }
 
+/* <a> tag denotes links, <p> denotes paragraphs, and <h2> denotes a heading type */
+
 a {
     color: #ffffff;
     text-decoration: none;
-}
-
-#hero {
-    height: 1000px;
-    width: 100%;
-    margin-bottom: 25px;
-    background-size: cover;
-    background-position: center;
 }
 
 p {
@@ -58,23 +67,15 @@ h2 {
     font-size: 36px;
 }
 
-.image-float-left {
-    float: left;
-    margin-right: 25px;
-    max-height: 200px;
-}
-
-.image-float-right {
-    float: right;
-    margin-left: 25px;
-    max-height: 200px;
-}
+/* The <main> tag can simply be thought of as the main content of a page  */
 
 main {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
+
+/* these classes and their adjoined CSS properties all affect the section to the right of this page  */
 
 .benefits {
     margin-right: 20px;
@@ -93,6 +94,20 @@ main {
     display: block;
     margin: 10px auto;
     max-width: 150px;
+}
+
+/* these classes and their adjoined CSS properties affect the elements nested within <main>  */
+
+.image-float-left {
+    float: left;
+    margin-right: 25px;
+    max-height: 200px;
+}
+
+.image-float-right {
+    float: right;
+    margin-left: 25px;
+    max-height: 200px;
 }
 
 .search-engine-optimization {
@@ -124,6 +139,8 @@ main {
     color: #ffffff;
     image-resolution: 30%;
 }
+
+/* The <footer> tag affects elements at the bottom of a page */
 
 footer {
     font-size: 20px;
